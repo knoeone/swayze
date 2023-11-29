@@ -18,10 +18,12 @@ import '../../../test_utils/create_swayze_controller.dart';
 import '../../../test_utils/create_table_data.dart';
 import '../../../test_utils/create_test_victim.dart';
 
-class _MockAction<T extends SwayzeIntent> extends Mock
-    implements DefaultSwayzeAction<T> {
+class _MockAction<T extends SwayzeIntent> extends Mock implements DefaultSwayzeAction<T> {
   @override
-  bool isEnabled(T intent) => true;
+  bool isEnabled(T intent, [BuildContext? context]) {
+    // Your code here
+    return true;
+  }
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.debug}) {
