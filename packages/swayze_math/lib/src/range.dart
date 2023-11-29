@@ -13,8 +13,7 @@ class Range {
   final int start;
   final int end;
 
-  const Range(this.start, this.end)
-      : assert(start <= end, 'Start: $start End: $end');
+  const Range(this.start, this.end) : assert(start <= end, 'Start: $start End: $end');
 
   static const Range zero = Range(0, 0);
 
@@ -138,7 +137,7 @@ const _kListEquality = ListEquality<Range>();
 /// A list of ranges that keeps with the smallest possible size (no overlaps
 /// between its members)
 @immutable
-class RangeCompactList extends IterableMixin<Range> implements Iterable<Range> {
+class RangeCompactList extends IterableMixin<Range> {
   final List<Range> _ranges;
 
   RangeCompactList() : _ranges = [];
@@ -250,9 +249,7 @@ class RangeIterable with IterableMixin<int> implements Iterable<int> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is RangeIterable &&
-          runtimeType == other.runtimeType &&
-          _range == other._range;
+      other is RangeIterable && runtimeType == other.runtimeType && _range == other._range;
 
   @override
   int get hashCode => _range.hashCode;
