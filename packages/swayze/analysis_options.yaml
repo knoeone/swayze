@@ -3,3 +3,8 @@ include: package:rows_lint/analysis_options.yaml
 analyzer:
   exclude:
      - 'test/**/*.mocks.dart'
+
+linter:
+  rules:
+    - prefer_single_quotes
+    - use_super_parameters

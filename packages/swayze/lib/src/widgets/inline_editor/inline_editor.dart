@@ -137,7 +137,7 @@ class _InlineEditorPlacerState extends State<InlineEditorPlacer> {
     final initialText = inlineEditorController.initialText;
     if (coordinate != null) {
       updateRectPositions();
-      Overlay.of(context)!.insert(
+      Overlay.of(context).insert(
         overlayEntryCache = generateOverlayEntryForInlineEditor(
           cellCoordinate: coordinate,
           initialText: initialText,
@@ -168,7 +168,7 @@ Rect? _getTableRect(BuildContext context) {
     return null;
   }
 
-  final overlay = Overlay.of(context)!.context.findRenderObject()! as RenderBox;
+  final overlay = Overlay.of(context).context.findRenderObject()! as RenderBox;
 
   final topLeft = MatrixUtils.transformPoint(
     table.getTransformTo(overlay),
@@ -193,7 +193,7 @@ Rect? _getCellRect({
   }
 
   final overlay =
-      (Overlay.of(context)!.context.findRenderObject()! as RenderBox)
+      (Overlay.of(context).context.findRenderObject()! as RenderBox)
           .paintBounds;
 
   final displacedRect =

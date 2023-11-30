@@ -260,7 +260,7 @@ void main() {
           cellsController,
           count: 11,
           headerData: [
-            const SwayzeHeaderData(hidden: true, index: 5, extent: null)
+            const SwayzeHeaderData(hidden: true, index: 5, extent: null),
           ],
         );
 
@@ -396,7 +396,7 @@ void main() {
       addHeaderControllerMock(
         cellsController,
         headerData: [
-          const SwayzeHeaderData(hidden: true, index: 1, extent: null)
+          const SwayzeHeaderData(hidden: true, index: 1, extent: null),
         ],
       );
 

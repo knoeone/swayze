@@ -32,7 +32,7 @@ class _TableShortcutsState extends State<TableShortcuts> {
       return OpenInlineEditorIntent(
         initialText: event.character,
       );
-    }
+    },
   });
 
   @override

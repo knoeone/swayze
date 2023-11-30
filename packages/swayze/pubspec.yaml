@@ -15,7 +15,7 @@ dependencies:
   flutter_sticky_header: ^0.6.0
   memoize: ^3.0.0
   built_collection: ^5.0.0
-  uuid: ^3.0.3
+  uuid: ^4.2.1
   cached_value: ^0.2.0
   path_drawing: ^1.0.0
   swayze_math: ^1.1.0
@@ -27,7 +27,7 @@ dev_dependencies:
     sdk: flutter
   rows_lint: 0.1.1
   test: ^1.16.8
-  mocktail: ^0.2.0
+  mocktail: ^1.0.1
   build_runner: ^2.0.1
   dartdoc: ^6.3.0
 

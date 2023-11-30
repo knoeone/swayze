@@ -19,7 +19,7 @@ class HeaderDisplacer extends MultiChildRenderObjectWidget {
   final double displacement;
   final Color background;
 
-  HeaderDisplacer({
+  const HeaderDisplacer({
     Key? key,
     List<HeaderItem> children = const [],
     required this.axis,
