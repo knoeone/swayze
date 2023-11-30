@@ -43,9 +43,9 @@ class _TableShortcutsState extends State<TableShortcuts> {
 
   @override
   Widget build(BuildContext context) {
-    return Shortcuts(
+    return Shortcuts.manager(
       debugLabel: '<Table Shortcuts>',
-      shortcuts: _staticShortcuts,
+      //shortcuts: _staticShortcuts,
       manager: manager,
       child: widget.child,
     );
