@@ -19,5 +19,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+dependency_overrides:
+  swayze_math:
+    path: ../../swayze_math
+
 flutter:
   uses-material-design: true
