@@ -142,7 +142,7 @@ class RangeCompactList extends IterableMixin<Range> {
 
   RangeCompactList() : _ranges = [];
 
-  RangeCompactList._(this._ranges);
+  const RangeCompactList._(this._ranges);
 
   /// Adds an [newItem] to the list by merging with existing items that overlaps
   /// with it
